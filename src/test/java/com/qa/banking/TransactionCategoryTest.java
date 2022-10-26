@@ -32,7 +32,7 @@ public class TransactionCategoryTest {
 	@Test
 	public void testTotalForAllCategories() {
 		String result = TCAT.getTotalCostPerCategory();
-		String expected = "Leisure Total Spend: 10.50\nGroceries Total Spend: 20.80";
+		String expected = "Leisure Total Spend: 10.50\nGroceries Total Spend: 20.80\n";
 		assertEquals(result, expected);
 	}
 }

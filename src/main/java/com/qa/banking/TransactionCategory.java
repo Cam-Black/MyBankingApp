@@ -29,6 +29,26 @@ public class TransactionCategory {
 	}
 	
 	public String getTotalCostPerCategory() {
+		try (Connection conn = DBUtils.getInstance().getConnection();
+		Statement stmnt = conn.createStatement()) {
+			List<String> categories = new ArrayList<>();
+			ResultSet rs = stmnt.executeQuery("SELECT category FROM transactions");
+			StringBuilder sb = new StringBuilder();
+			while (rs.next()) {
+				categories.add(rs.getString(1));
+			}
+			
+			categories.stream().distinct().forEach(el -> {
+				double cost = getTotalCostForCategory(el);
+				sb.append(el);
+				sb.append(" Total Spend: ");
+				sb.append(String.format("%.2f", cost));
+				sb.append("\n");
+			});
+			return sb.toString();
+		} catch (Exception e) {
+			System.err.println(e);
+		}
 		return "";
 	}
 }
