@@ -2,10 +2,8 @@ package com.qa.banking;
 
 import com.qa.utils.DBUtils;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -55,6 +53,29 @@ public class TransactionCategory {
 	}
 	
 	public String getAllTransactionsByCategory(String category) {
-		return "'2022-03-15', 'WHSmiths', 10.50, 'Leisure'";
+		try (Connection conn = DBUtils.getInstance().getConnection();
+			PreparedStatement ps = conn.prepareStatement(
+					"SELECT * FROM test.transactions where category = ? order by transaction_date desc;")) {
+			List<Transaction> transactions = new ArrayList<>();
+			ps.setString(1, category);
+			ResultSet rs = ps.executeQuery();
+			
+			while (rs.next()) {
+				transactions.add(modelResults(rs));
+			}
+			
+			return transactions.toString();
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+		return null;
+	}
+	
+	public Transaction modelResults(ResultSet rs) throws SQLException {
+		LocalDate transactionDate = rs.getDate("transaction_date").toLocalDate();
+		String vendor = rs.getString("vendor");
+		Double amount = rs.getDouble("amount");
+		String category = rs.getString("category");
+		return new Transaction(transactionDate, vendor, amount, category);
 	}
 }

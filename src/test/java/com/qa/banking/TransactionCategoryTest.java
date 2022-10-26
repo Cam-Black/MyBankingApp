@@ -38,7 +38,7 @@ public class TransactionCategoryTest {
 	@Test
 	public void testAllTransactionsForLeisure() {
 		String transactions = TCAT.getAllTransactionsByCategory("Leisure");
-		String expected = "'2022-03-15', 'WHSmiths', 10.50, 'Leisure'";
+		String expected = "[Transaction: [date: 2022-03-15, vendor: WHSmiths, amount: 10.5, category: Leisure]";
 		assertEquals(expected, transactions);
 	}
 }
