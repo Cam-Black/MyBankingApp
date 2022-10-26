@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Passed second test case by returning a String containing the contents of the Category and Total Spend.">
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Wrote test to check all transactions for a given period are printed in the correct order.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fb-two-test-case-one" />
+        <entry key="$PROJECT_DIR$" value="fb-two-test-case-two" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +60,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testTotalForAllCategories">
+  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testAllTransactionsForLeisure">
     <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
@@ -71,6 +72,22 @@
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionCategoryTest.testAllTransactionsForLeisure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="METHOD_NAME" value="testAllTransactionsForLeisure" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,29 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.totalForLeisureCategoryIs10Pound50" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBankingApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.banking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.banking" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="totalForLeisureCategoryIs10Pound50" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForAllCategories" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForGroceriesCategoryIs20Pound80" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForLeisure" />
         <item itemvalue="JUnit.TransactionCategoryTest" />
-        <item itemvalue="JUnit.TransactionCategoryTest.totalForLeisureCategoryIs10Pound50" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForAllCategories" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForGroceriesCategoryIs20Pound80" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +158,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
-      <workItem from="1666775805568" duration="19610000" />
+      <workItem from="1666775805568" duration="21170000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -278,7 +279,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666796484713</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Code cleanup, (imports and whitespace).">
+      <created>1666796773596</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666796773596</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Wrote test to check all transactions for a given period are printed in the correct order.">
+      <created>1666797781457</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666797781457</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,6 +329,8 @@
     <MESSAGE value="Refactored code to work from test .sql files and added second test case that also passes." />
     <MESSAGE value="Created a new test case to return, in String format the total cost for every category. Added empty method to prevent exceptions from tests." />
     <MESSAGE value="Passed second test case by returning a String containing the contents of the Category and Total Spend." />
-    <option name="LAST_COMMIT_MESSAGE" value="Passed second test case by returning a String containing the contents of the Category and Total Spend." />
+    <MESSAGE value="Code cleanup, (imports and whitespace)." />
+    <MESSAGE value="Wrote test to check all transactions for a given period are printed in the correct order." />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrote test to check all transactions for a given period are printed in the correct order." />
   </component>
 </project>

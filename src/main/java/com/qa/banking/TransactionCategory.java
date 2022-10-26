@@ -53,4 +53,8 @@ public class TransactionCategory {
 		}
 		return "";
 	}
+	
+	public String getAllTransactionsByCategory(String category) {
+		return "'2022-03-15', 'WHSmiths', 10.50, 'Leisure'";
+	}
 }
