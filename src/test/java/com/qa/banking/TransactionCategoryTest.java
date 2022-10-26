@@ -18,7 +18,6 @@ public class TransactionCategoryTest {
 	@Test
 	public void voidTotalForLeisureCategoryIs10Pound50() {
 		double totalCost = TCAT.getTotalCostForCategory("Leisure");
-		
 		assertEquals(10.50, totalCost);
 	}
 }

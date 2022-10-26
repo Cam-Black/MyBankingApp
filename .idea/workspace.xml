@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/utils/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/utils/DBUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +93,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
-      <workItem from="1666775805568" duration="8705000" />
+      <workItem from="1666775805568" duration="15342000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -132,7 +130,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666780199867</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed sql queries.">
+      <created>1666784551029</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666784551029</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed name of db due to name conflict.">
+      <created>1666784577245</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666784577245</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ignored .idea folder.">
+      <created>1666784607047</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666784607047</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Created method getTotalCostForCategory and added hard value to return to make test pass.">
+      <created>1666784661556</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666784661556</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +182,10 @@
     <MESSAGE value="Created empty classes needed for proj." />
     <MESSAGE value="Set up test schema and data to use for testing." />
     <MESSAGE value="Created setup in test creating a DBUtils class to handle initial setup. Created failing test to test the total cost of the &quot;Leisure&quot; Category." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created setup in test creating a DBUtils class to handle initial setup. Created failing test to test the total cost of the &quot;Leisure&quot; Category." />
+    <MESSAGE value="Fixed sql queries." />
+    <MESSAGE value="Changed name of db due to name conflict." />
+    <MESSAGE value="Ignored .idea folder." />
+    <MESSAGE value="Created method getTotalCostForCategory and added hard value to return to make test pass." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created method getTotalCostForCategory and added hard value to return to make test pass." />
   </component>
 </project>
