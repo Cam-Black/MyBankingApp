@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Created empty classes needed for proj.">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Created setup in test creating a DBUtils class to handle initial setup. Created failing test to test the total cost of the &quot;Leisure&quot; Category.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/utils/DBUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="fb-one-setup" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,6 +61,28 @@
     ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TransactionCategoryTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
-      <workItem from="1666775805568" duration="2374000" />
+      <workItem from="1666775805568" duration="4384000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -90,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666777105528</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Set up test schema and data to use for testing.">
+      <created>1666778231056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666778231056</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +143,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Added h2 and junit dependencies to pom.xml." />
     <MESSAGE value="Created empty classes needed for proj." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created empty classes needed for proj." />
+    <MESSAGE value="Set up test schema and data to use for testing." />
+    <MESSAGE value="Created setup in test creating a DBUtils class to handle initial setup. Created failing test to test the total cost of the &quot;Leisure&quot; Category." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created setup in test creating a DBUtils class to handle initial setup. Created failing test to test the total cost of the &quot;Leisure&quot; Category." />
   </component>
 </project>
