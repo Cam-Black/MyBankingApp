@@ -27,14 +27,13 @@ public class DBUtils {
 	public void executeQuery() {
 		try (Connection conn = this.getConnection();
 		     Statement stmnt = conn.createStatement()) {
-			String sql = "CREATE SCHEMA IF NOT EXISTS test;" +
-					"USE test;" +
+			String sql =
 					"DROP TABLE IF EXISTS transactions;" +
 					"CREATE TABLE IF NOT EXISTS transactions (" +
 					"`id` BIGINT AUTO_INCREMENT PRIMARY KEY," +
 					"`transaction_date` DATE," +
 					"`vendor` varchar(255) NOT NULL," +
-					"`amount` DECIMAL NOT NULL," +
+					"`amount` DOUBLE NOT NULL," +
 					"`category` varchar(255)" +
 					"); " +
 					"INSERT INTO transactions" +
