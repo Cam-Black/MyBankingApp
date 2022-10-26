@@ -2,7 +2,10 @@ package com.qa.banking;
 
 import com.qa.utils.DBUtils;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +21,7 @@ public class TransactionCategory {
 			ps.setString(1, category);
 			ResultSet rs = ps.executeQuery();
 			
-			if(rs.next()) {
+			if (rs.next()) {
 				return rs.getDouble(1);
 			}
 			
@@ -29,8 +32,7 @@ public class TransactionCategory {
 	}
 	
 	public String getTotalCostPerCategory() {
-		try (Connection conn = DBUtils.getInstance().getConnection();
-		Statement stmnt = conn.createStatement()) {
+		try (Connection conn = DBUtils.getInstance().getConnection(); Statement stmnt = conn.createStatement()) {
 			List<String> categories = new ArrayList<>();
 			ResultSet rs = stmnt.executeQuery("SELECT category FROM transactions");
 			StringBuilder sb = new StringBuilder();

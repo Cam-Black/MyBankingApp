@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Created a new test case to return, in String format the total cost for every category. Added empty method to prevent exceptions from tests.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Passed second test case by returning a String containing the contents of the Category and Total Spend.">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
-      <workItem from="1666775805568" duration="19324000" />
+      <workItem from="1666775805568" duration="19610000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -273,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666795607394</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Passed second test case by returning a String containing the contents of the Category and Total Spend.">
+      <created>1666796484713</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666796484713</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +313,7 @@
     <MESSAGE value="Removed need for List and return sum of result set." />
     <MESSAGE value="Refactored code to work from test .sql files and added second test case that also passes." />
     <MESSAGE value="Created a new test case to return, in String format the total cost for every category. Added empty method to prevent exceptions from tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a new test case to return, in String format the total cost for every category. Added empty method to prevent exceptions from tests." />
+    <MESSAGE value="Passed second test case by returning a String containing the contents of the Category and Total Spend." />
+    <option name="LAST_COMMIT_MESSAGE" value="Passed second test case by returning a String containing the contents of the Category and Total Spend." />
   </component>
 </project>
