@@ -1,12 +1,11 @@
 package com.qa.banking;
 
 import com.qa.utils.DBUtils;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TransactionCategoryTest {
 	private final TransactionCategory TCAT = new TransactionCategory();
@@ -34,5 +33,12 @@ public class TransactionCategoryTest {
 		String result = TCAT.getTotalCostPerCategory();
 		String expected = "Leisure Total Spend: 10.50\nGroceries Total Spend: 20.80\n";
 		assertEquals(result, expected);
+	}
+	
+	@Test
+	public void testAllTransactionsForLeisure() {
+		String transactions = TCAT.getAllTransactionsByCategory("Leisure");
+		String expected = "'2022-03-15', 'WHSmiths', 10.50, 'Leisure'";
+		assertEquals(expected, transactions);
 	}
 }
