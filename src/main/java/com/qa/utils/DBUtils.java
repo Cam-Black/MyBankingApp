@@ -15,7 +15,7 @@ public class DBUtils {
 	private static DBUtils instance;
 	
 	public DBUtils() {
-		this.dbUrl = "jdbc:h2:~/test";
+		this.dbUrl = "jdbc:h2:~/testdb";
 		this.dbUser = "sa";
 		this.dbPassword = "";
 	}
@@ -27,18 +27,20 @@ public class DBUtils {
 	public void executeQuery() {
 		try (Connection conn = this.getConnection();
 		     Statement stmnt = conn.createStatement()) {
-			stmnt.executeUpdate("CREATE SCHEMA test;\n" +
-					"USE test;\n" +
-					"CREATE TABLE transactions (\n" +
-					"    `id` BIGINT AUTO_INCREMENT PRIMARY KEY,\n" +
-					"    `transaction_date` DATE,\n" +
-					"    `vendor` varchar(255) NOT NULL,\n" +
-					"    `amount` DECIMAL NOT NULL,\n" +
-					"    `category` varchar(255)\n" +
-					");");
-			stmnt.executeUpdate("INSERT INTO `test`.`transactions` (`transaction_date`, `vendor`, `amount`, " +
-					"`category`)\n" +
-					"    VALUES (2022-03-15, 'WHSmiths', 10.50, 'Leisure');");
+			String sql = "CREATE SCHEMA IF NOT EXISTS test;" +
+					"USE test;" +
+					"DROP TABLE IF EXISTS transactions;" +
+					"CREATE TABLE IF NOT EXISTS transactions (" +
+					"`id` BIGINT AUTO_INCREMENT PRIMARY KEY," +
+					"`transaction_date` DATE," +
+					"`vendor` varchar(255) NOT NULL," +
+					"`amount` DECIMAL NOT NULL," +
+					"`category` varchar(255)" +
+					"); " +
+					"INSERT INTO transactions" +
+					"(`transaction_date`, `vendor`, `amount`, `category`)" +
+					"VALUES ('2022-03-15', 'WHSmiths', 10.50, 'Leisure');";
+			stmnt.executeUpdate(sql);
 		} catch (Exception e) {
 			System.err.println(e);
 		}
