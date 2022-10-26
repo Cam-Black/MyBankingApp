@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Removed need for List and return sum of result set.">
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Refactored code to work from test .sql files and added second test case that also passes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/utils/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/utils/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TransactionCategoryTest">
+  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testTotalForAllCategories">
     <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
@@ -78,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.totalForGroceriesCategoryIs20Pound80" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionCategoryTest.testTotalForAllCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +87,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="totalForGroceriesCategoryIs20Pound80" />
+      <option name="METHOD_NAME" value="testTotalForAllCategories" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionCategoryTest.testTotalForGroceriesCategoryIs20Pound80" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="METHOD_NAME" value="testTotalForGroceriesCategoryIs20Pound80" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="METHOD_NAME" value="testTotalForLeisureCategoryIs10Pound50" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,28 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.totalForLeisureCategoryIs20Pound80" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBankingApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.banking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.banking" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="totalForLeisureCategoryIs20Pound80" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForAllCategories" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForGroceriesCategoryIs20Pound80" />
         <item itemvalue="JUnit.TransactionCategoryTest" />
         <item itemvalue="JUnit.TransactionCategoryTest.totalForLeisureCategoryIs10Pound50" />
-        <item itemvalue="JUnit.TransactionCategoryTest.totalForGroceriesCategoryIs20Pound80" />
-        <item itemvalue="JUnit.TransactionCategoryTest.totalForLeisureCategoryIs20Pound80" />
       </list>
     </recent_temporary>
   </component>
@@ -143,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
-      <workItem from="1666775805568" duration="17122000" />
+      <workItem from="1666775805568" duration="18393000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -243,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666793403413</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Refactored code to work from test .sql files and added second test case that also passes.">
+      <created>1666794508866</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666794508866</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +299,7 @@
     <MESSAGE value="Created method to return correct value from SQL query to pass test." />
     <MESSAGE value="renamed variables in test and added new failing test to check for groceries category." />
     <MESSAGE value="Removed need for List and return sum of result set." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed need for List and return sum of result set." />
+    <MESSAGE value="Refactored code to work from test .sql files and added second test case that also passes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored code to work from test .sql files and added second test case that also passes." />
   </component>
 </project>

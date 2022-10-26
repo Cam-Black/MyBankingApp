@@ -27,4 +27,8 @@ public class TransactionCategory {
 		}
 		return 0.0;
 	}
+	
+	public String getTotalCostPerCategory() {
+		return "";
+	}
 }
