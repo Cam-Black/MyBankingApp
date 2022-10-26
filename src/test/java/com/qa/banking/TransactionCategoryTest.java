@@ -16,8 +16,14 @@ public class TransactionCategoryTest {
 	}
 	
 	@Test
-	public void voidTotalForLeisureCategoryIs10Pound50() {
-		double totalCost = TCAT.getTotalCostForCategory("Leisure");
-		assertEquals(10.50, totalCost);
+	public void totalForLeisureCategoryIs10Pound50() {
+		double expectedCost = TCAT.getTotalCostForCategory("Leisure");
+		assertEquals(10.50, expectedCost);
+	}
+	
+	@Test
+	public void totalForGroceriesCategoryIs20Pound80() {
+		double expectedCost = TCAT.getTotalCostForCategory("Groceries");
+		assertEquals(20.80, expectedCost);
 	}
 }
