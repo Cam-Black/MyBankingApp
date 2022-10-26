@@ -1,9 +1,11 @@
-CREATE SCHEMA test;
+CREATE SCHEMA IF NOT EXISTS test;
 USE test;
-CREATE TABLE transactions (
-    `id` BIGINT AUTO_INCREMENT PRIMARY KEY,
+DROP TABLE IF EXISTS transactions;
+CREATE TABLE IF NOT EXISTS transactions
+(
+    `id`               BIGINT AUTO_INCREMENT PRIMARY KEY,
     `transaction_date` DATE,
-    `vendor` varchar(255) NOT NULL,
-    `amount` DECIMAL NOT NULL,
-    `category` varchar(255)
+    `vendor`           varchar(255) NOT NULL,
+    `amount`           DECIMAL      NOT NULL,
+    `category`         varchar(255)
 );
