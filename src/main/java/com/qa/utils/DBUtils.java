@@ -1,9 +1,14 @@
 package com.qa.utils;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
+import java.util.stream.Stream;
 
 public class DBUtils {
 	private final String dbUrl;
@@ -14,35 +19,54 @@ public class DBUtils {
 	
 	private static DBUtils instance;
 	
+	public DBUtils(String properties) {
+		Properties dbProps = new Properties();
+		try (InputStream fis = ClassLoader.getSystemResourceAsStream(properties)) {
+			dbProps.load(fis);
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+		this.dbUrl = dbProps.getProperty("db.url", "");
+		this.dbUser = dbProps.getProperty("db.user", "");
+		this.dbPassword = dbProps.getProperty("db.password", "");
+	}
+	
 	public DBUtils() {
-		this.dbUrl = "jdbc:h2:~/testdb";
-		this.dbUser = "sa";
-		this.dbPassword = "";
+		this("db.properties");
+	}
+	
+	public int init(String... paths) {
+		int modified = 0;
+		
+		for (String path : paths) {
+			modified += executeQuery(path);
+		}
+		
+		return modified;
+	}
+	
+	public int executeQuery(String file) {
+		int modified = 0;
+		try (Connection connection = this.getConnection();
+		     BufferedReader br = new BufferedReader(new FileReader(file));) {
+			String fileAsString = br.lines().reduce((acc, next) -> acc + next).orElse("");
+			String[] queries = fileAsString.split(";");
+			modified += Stream.of(queries).map(string -> {
+				try (Statement statement = connection.createStatement();) {
+					return statement.executeUpdate(string);
+				} catch (Exception e) {
+					System.err.println(e);
+					return 0;
+				}
+			}).reduce(Integer::sum).orElse(0);
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+		return modified;
 	}
 	
 	public Connection getConnection() throws SQLException {
 		return DriverManager.getConnection(this.dbUrl, this.dbUser, this.dbPassword);
-	}
-	
-	public void executeQuery() {
-		try (Connection conn = this.getConnection();
-		     Statement stmnt = conn.createStatement()) {
-			String sql =
-					"DROP TABLE IF EXISTS transactions;" +
-					"CREATE TABLE IF NOT EXISTS transactions (" +
-					"`id` BIGINT AUTO_INCREMENT PRIMARY KEY," +
-					"`transaction_date` DATE," +
-					"`vendor` varchar(255) NOT NULL," +
-					"`amount` DOUBLE NOT NULL," +
-					"`category` varchar(255)" +
-					"); " +
-					"INSERT INTO transactions" +
-					"(`transaction_date`, `vendor`, `amount`, `category`)" +
-					"VALUES ('2022-03-15', 'WHSmiths', 10.50, 'Leisure');";
-			stmnt.executeUpdate(sql);
-		} catch (Exception e) {
-			System.err.println(e);
-		}
 	}
 	
 	public static void connect() {

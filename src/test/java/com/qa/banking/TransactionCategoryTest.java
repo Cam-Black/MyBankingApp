@@ -12,7 +12,7 @@ public class TransactionCategoryTest {
 	@BeforeEach
 	public void setup() {
 		DBUtils.connect();
-		DBUtils.getInstance().executeQuery();
+		DBUtils.getInstance().init("src/test/resources/schema.sql", "src/test/resources/data.sql");
 	}
 	
 	@Test
