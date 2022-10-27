@@ -60,7 +60,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TransactionCategoryTest">
+  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testMaxExpenseFor2022InGroceries">
     <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
@@ -76,22 +76,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.testAllTransactionsForLeisure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyBankingApp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.banking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.banking" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="testAllTransactionsForLeisure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TransactionCategoryTest.testAvgInAMonthForDirectDebit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
@@ -103,6 +87,22 @@
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
       <option name="METHOD_NAME" value="testAvgInAMonthForDirectDebit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionCategoryTest.testMaxExpenseFor2022InGroceries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="METHOD_NAME" value="testMaxExpenseFor2022InGroceries" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransactionCategoryTest.testMaxExpenseFor2022InGroceries" />
         <item itemvalue="JUnit.TransactionCategoryTest" />
         <item itemvalue="JUnit.TransactionCategoryTest.testMinExpenseFor2022InGroceries" />
         <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
         <item itemvalue="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForLeisure" />
       </list>
     </recent_temporary>
   </component>
