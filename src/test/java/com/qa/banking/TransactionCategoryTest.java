@@ -34,7 +34,11 @@ public class TransactionCategoryTest {
 	@Test
 	public void testTotalForAllCategories() {
 		String result = TCAT.getTotalCostPerCategory();
-		String expected = "Leisure Total Spend: 10.50\nGroceries Total Spend: 20.80\n";
+		String expected = """
+				Leisure Total Spend: 10.50
+				Groceries Total Spend: 20.80
+				Direct Debit Total Spend: 512.43
+				""";
 		assertEquals(result, expected);
 	}
 	
