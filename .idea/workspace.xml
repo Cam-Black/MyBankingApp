@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Hard coding return value to make test pass.">
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Implemented working code to get the average spend in a month for a given category.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/sql-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql-data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
       <workItem from="1666775805568" duration="25632000" />
-      <workItem from="1666858327996" duration="9109000" />
+      <workItem from="1666858327996" duration="10085000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -380,7 +378,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666869873891</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Changed data to use current date for 2 values to test for average spend in a given month.">
+      <created>1666872603393</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1666872603393</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Implemented working code to get the average spend in a month for a given category.">
+      <created>1666872634103</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1666872634103</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,8 +411,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Changed name of db due to name conflict." />
-    <MESSAGE value="Ignored .idea folder." />
     <MESSAGE value="Created method getTotalCostForCategory and added hard value to return to make test pass." />
     <MESSAGE value="Change Decimal to Double and removed the create schema lines." />
     <MESSAGE value="Changed Decimal to Double." />
@@ -424,7 +434,9 @@
     <MESSAGE value="Renamed method in test for accuracy in what the method is returning." />
     <MESSAGE value="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data." />
     <MESSAGE value="Hard coding return value to make test pass." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hard coding return value to make test pass." />
+    <MESSAGE value="Changed data to use current date for 2 values to test for average spend in a given month." />
+    <MESSAGE value="Implemented working code to get the average spend in a month for a given category." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented working code to get the average spend in a month for a given category." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
