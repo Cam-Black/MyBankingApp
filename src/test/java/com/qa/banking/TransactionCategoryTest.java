@@ -67,7 +67,7 @@ public class TransactionCategoryTest {
 	
 	@Test
 	public void testMinExpenseFor2022InGroceries() {
-		double minSpendFor2022InGroceries = TCAT.getMinSpend("2022", "Groceries");
+		double minSpendFor2022InGroceries = TCAT.getMinSpend("Groceries", "2022");
 		assertEquals(10.30, minSpendFor2022InGroceries, 0.0);
 	}
 }
