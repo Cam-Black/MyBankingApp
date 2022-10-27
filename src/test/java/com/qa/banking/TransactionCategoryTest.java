@@ -70,4 +70,10 @@ public class TransactionCategoryTest {
 		double minSpendFor2022InGroceries = TCAT.getMinSpend("Groceries", "2022");
 		assertEquals(10.30, minSpendFor2022InGroceries, 0.0);
 	}
+	
+	@Test
+	public void testMinExpenseFor2022InLeisure() {
+		double minSpendFor2022InLeisure = TCAT.getMinSpend("Leisure", "2022");
+		assertEquals(10.50, minSpendFor2022InLeisure, 0.0);
+	}
 }
