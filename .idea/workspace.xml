@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Implemented methods and Arrange to create passing tests.">
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/sql-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql-data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit">
+  <component name="RunManager" selected="JUnit.TransactionCategoryTest">
     <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
@@ -144,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit" />
         <item itemvalue="JUnit.TransactionCategoryTest" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit" />
         <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForGroceries" />
         <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForLeisure" />
         <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
@@ -161,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
       <workItem from="1666775805568" duration="25632000" />
-      <workItem from="1666858327996" duration="6953000" />
+      <workItem from="1666858327996" duration="7484000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -345,7 +344,35 @@
       <option name="project" value="LOCAL" />
       <updated>1666863758146</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added test data to check avg spend in a month.">
+      <created>1666869478974</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869478974</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Created failing test for getting avg spend in a given month.">
+      <created>1666869502167</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869502167</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Renamed method in test for accuracy in what the method is returning.">
+      <created>1666869570723</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869570724</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data.">
+      <created>1666869693603</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869693603</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,10 +391,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added h2 and junit dependencies to pom.xml." />
-    <MESSAGE value="Created empty classes needed for proj." />
-    <MESSAGE value="Set up test schema and data to use for testing." />
-    <MESSAGE value="Created setup in test creating a DBUtils class to handle initial setup. Created failing test to test the total cost of the &quot;Leisure&quot; Category." />
     <MESSAGE value="Fixed sql queries." />
     <MESSAGE value="Changed name of db due to name conflict." />
     <MESSAGE value="Ignored .idea folder." />
@@ -389,6 +412,10 @@
     <MESSAGE value=".idea files." />
     <MESSAGE value="Removed [] from toString()." />
     <MESSAGE value="Implemented methods and Arrange to create passing tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented methods and Arrange to create passing tests." />
+    <MESSAGE value="Added test data to check avg spend in a month." />
+    <MESSAGE value="Created failing test for getting avg spend in a given month." />
+    <MESSAGE value="Renamed method in test for accuracy in what the method is returning." />
+    <MESSAGE value="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data." />
+    <option name="LAST_COMMIT_MESSAGE" value="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data." />
   </component>
 </project>

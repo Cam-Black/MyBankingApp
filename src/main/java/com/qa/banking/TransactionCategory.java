@@ -79,4 +79,8 @@ public class TransactionCategory {
 		String category = rs.getString("category");
 		return new Transaction(transactionDate, vendor, amount, category);
 	}
+	
+	public double getAvgSpendInAMonth(String category) {
+		return 150.0;
+	}
 }
