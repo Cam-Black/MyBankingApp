@@ -54,7 +54,7 @@ public class Transaction {
 	
 	@Override
 	public String toString() {
-		return "Transaction: [date: " + getTransactionDate() + ", vendor: " + getVendor() + ", amount: " + getAmount() +
-				", category: " + getCategory();
+		return "Transaction Date: " + getTransactionDate() + " Vendor: " + getVendor() + " Amount: " + getAmount() +
+				" Category: " + getCategory();
 	}
 }
