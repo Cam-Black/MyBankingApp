@@ -64,4 +64,28 @@ public class TransactionCategoryTest {
 		double directDebitAvg = TCAT.getAvgSpendInAMonth("Direct Debit");
 		assertEquals(150.0, directDebitAvg, 0.0);
 	}
+	
+	@Test
+	public void testMinExpenseFor2022InGroceries() {
+		double minSpendFor2022InGroceries = TCAT.getMinSpend("Groceries", "2022");
+		assertEquals(10.30, minSpendFor2022InGroceries, 0.0);
+	}
+	
+	@Test
+	public void testMinExpenseFor2022InLeisure() {
+		double minSpendFor2022InLeisure = TCAT.getMinSpend("Leisure", "2022");
+		assertEquals(10.50, minSpendFor2022InLeisure, 0.0);
+	}
+	
+	@Test
+	public void testMaxExpenseFor2022InGroceries() {
+		double minSpendFor2022InGroceries = TCAT.getMaxSpend("Groceries", "2022");
+		assertEquals(10.50, minSpendFor2022InGroceries, 0.0);
+	}
+	
+	@Test
+	public void testMaxExpenseFor2022InDirectDebit() {
+		double maxSpendFor2022InDirectDebit = TCAT.getMaxSpend("Direct Debit", "2022");
+		assertEquals(212.43, maxSpendFor2022InDirectDebit, 0.0);
+	}
 }

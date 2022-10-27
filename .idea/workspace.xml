@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Implemented working code to get the average spend in a month for a given category.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment=".idea files.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fb-three-test-case-one" />
+        <entry key="$PROJECT_DIR$" value="fb-six-test-case-one" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.testAllTransactionsForGroceries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionCategoryTest.testMaxExpenseFor2022InDirectDebit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
         <pattern>
@@ -86,13 +86,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="testAllTransactionsForGroceries" />
+      <option name="METHOD_NAME" value="testMaxExpenseFor2022InDirectDebit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.testAllTransactionsForLeisure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionCategoryTest.testMaxExpenseFor2022InGroceries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
         <pattern>
@@ -102,13 +102,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="testAllTransactionsForLeisure" />
+      <option name="METHOD_NAME" value="testMaxExpenseFor2022InGroceries" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.testAvgInAMonthForDirectDebit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionCategoryTest.testMinExpenseFor2022InGroceries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +118,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="testAvgInAMonthForDirectDebit" />
+      <option name="METHOD_NAME" value="testMinExpenseFor2022InGroceries" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,9 +143,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TransactionCategoryTest" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForGroceries" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForLeisure" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testMaxExpenseFor2022InDirectDebit" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testMaxExpenseFor2022InGroceries" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testMinExpenseFor2022InGroceries" />
         <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
       </list>
     </recent_temporary>
@@ -392,7 +392,70 @@
       <option name="project" value="LOCAL" />
       <updated>1666872634103</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Implemented test to check the minimum spend in 2022 for the Groceries category.">
+      <created>1666873651356</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1666873651356</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Implemented method, hard coding return value to pass test.">
+      <created>1666873671630</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1666873671630</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Swapped arguments around to match parameter order.">
+      <created>1666874264254</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874264254</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Implemented code to get the minimum spend in a given year for a given category.">
+      <created>1666874298081</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874298081</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Created second test case for min spend using a different category.">
+      <created>1666874435968</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874435968</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Created test case to get max value for a given category in a given year.">
+      <created>1666874515585</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874515585</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Implemented code to get max spend in a given category for a given year and checked that test passes.">
+      <created>1666874611163</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874611163</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Implemented second test case to confirm max expense is returned from different categories.">
+      <created>1666874800683</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874800683</updated>
+    </task>
+    <task id="LOCAL-00042" summary=".idea files.">
+      <created>1666875253424</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1666875253424</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,14 +474,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Created method getTotalCostForCategory and added hard value to return to make test pass." />
-    <MESSAGE value="Change Decimal to Double and removed the create schema lines." />
-    <MESSAGE value="Changed Decimal to Double." />
-    <MESSAGE value="Created method to return correct value from SQL query to pass test." />
-    <MESSAGE value="renamed variables in test and added new failing test to check for groceries category." />
-    <MESSAGE value="Removed need for List and return sum of result set." />
-    <MESSAGE value="Refactored code to work from test .sql files and added second test case that also passes." />
-    <MESSAGE value="Created a new test case to return, in String format the total cost for every category. Added empty method to prevent exceptions from tests." />
     <MESSAGE value="Passed second test case by returning a String containing the contents of the Category and Total Spend." />
     <MESSAGE value="Code cleanup, (imports and whitespace)." />
     <MESSAGE value="Wrote test to check all transactions for a given period are printed in the correct order." />
@@ -426,7 +481,6 @@
     <MESSAGE value="Implemented code to pass test that prints all transactions under a given category." />
     <MESSAGE value="Renamed files, fixed whitespaces due to SQL not being executed when not inline." />
     <MESSAGE value="Renamed to sql-data.sql" />
-    <MESSAGE value=".idea files." />
     <MESSAGE value="Removed [] from toString()." />
     <MESSAGE value="Implemented methods and Arrange to create passing tests." />
     <MESSAGE value="Added test data to check avg spend in a month." />
@@ -436,52 +490,15 @@
     <MESSAGE value="Hard coding return value to make test pass." />
     <MESSAGE value="Changed data to use current date for 2 values to test for average spend in a given month." />
     <MESSAGE value="Implemented working code to get the average spend in a month for a given category." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented working code to get the average spend in a month for a given category." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
-          <line>87</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
-          <line>90</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Implemented test to check the minimum spend in 2022 for the Groceries category." />
+    <MESSAGE value="Implemented method, hard coding return value to pass test." />
+    <MESSAGE value="Swapped arguments around to match parameter order." />
+    <MESSAGE value="Implemented code to get the minimum spend in a given year for a given category." />
+    <MESSAGE value="Created second test case for min spend using a different category." />
+    <MESSAGE value="Created test case to get max value for a given category in a given year." />
+    <MESSAGE value="Implemented code to get max spend in a given category for a given year and checked that test passes." />
+    <MESSAGE value="Implemented second test case to confirm max expense is returned from different categories." />
+    <MESSAGE value=".idea files." />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea files." />
   </component>
 </project>
