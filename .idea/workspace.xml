@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data.">
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Hard coding return value to make test pass.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sql-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql-data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
       <workItem from="1666775805568" duration="25632000" />
-      <workItem from="1666858327996" duration="7484000" />
+      <workItem from="1666858327996" duration="9109000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -372,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666869693603</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Hard coding return value to make test pass.">
+      <created>1666869873891</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869873891</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +399,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Fixed sql queries." />
     <MESSAGE value="Changed name of db due to name conflict." />
     <MESSAGE value="Ignored .idea folder." />
     <MESSAGE value="Created method getTotalCostForCategory and added hard value to return to make test pass." />
@@ -416,6 +423,53 @@
     <MESSAGE value="Created failing test for getting avg spend in a given month." />
     <MESSAGE value="Renamed method in test for accuracy in what the method is returning." />
     <MESSAGE value="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data." />
-    <option name="LAST_COMMIT_MESSAGE" value="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data." />
+    <MESSAGE value="Hard coding return value to make test pass." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hard coding return value to make test pass." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
