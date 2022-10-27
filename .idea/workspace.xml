@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Implemented code to get the minimum spend in a given year for a given category.">
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Implemented code to get max spend in a given category for a given year and checked that test passes.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fb-five-test-case-one" />
+        <entry key="$PROJECT_DIR$" value="fb-six-test-case-one" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +61,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testMaxExpenseFor2022InGroceries">
+  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testMaxExpenseFor2022InDirectDebit">
     <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
@@ -76,7 +77,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.testAvgInAMonthForDirectDebit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionCategoryTest.testMaxExpenseFor2022InDirectDebit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +87,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="testAvgInAMonthForDirectDebit" />
+      <option name="METHOD_NAME" value="testMaxExpenseFor2022InDirectDebit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransactionCategoryTest.testMaxExpenseFor2022InDirectDebit" />
         <item itemvalue="JUnit.TransactionCategoryTest.testMaxExpenseFor2022InGroceries" />
         <item itemvalue="JUnit.TransactionCategoryTest" />
         <item itemvalue="JUnit.TransactionCategoryTest.testMinExpenseFor2022InGroceries" />
         <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +421,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666874298081</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Created second test case for min spend using a different category.">
+      <created>1666874435968</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874435968</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Created test case to get max value for a given category in a given year.">
+      <created>1666874515585</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874515585</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Implemented code to get max spend in a given category for a given year and checked that test passes.">
+      <created>1666874611163</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874611163</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,9 +461,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="renamed variables in test and added new failing test to check for groceries category." />
-    <MESSAGE value="Removed need for List and return sum of result set." />
-    <MESSAGE value="Refactored code to work from test .sql files and added second test case that also passes." />
     <MESSAGE value="Created a new test case to return, in String format the total cost for every category. Added empty method to prevent exceptions from tests." />
     <MESSAGE value="Passed second test case by returning a String containing the contents of the Category and Total Spend." />
     <MESSAGE value="Code cleanup, (imports and whitespace)." />
@@ -464,6 +483,9 @@
     <MESSAGE value="Implemented method, hard coding return value to pass test." />
     <MESSAGE value="Swapped arguments around to match parameter order." />
     <MESSAGE value="Implemented code to get the minimum spend in a given year for a given category." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented code to get the minimum spend in a given year for a given category." />
+    <MESSAGE value="Created second test case for min spend using a different category." />
+    <MESSAGE value="Created test case to get max value for a given category in a given year." />
+    <MESSAGE value="Implemented code to get max spend in a given category for a given year and checked that test passes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented code to get max spend in a given category for a given year and checked that test passes." />
   </component>
 </project>

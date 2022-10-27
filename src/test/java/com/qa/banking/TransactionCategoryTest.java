@@ -82,4 +82,10 @@ public class TransactionCategoryTest {
 		double minSpendFor2022InGroceries = TCAT.getMaxSpend("Groceries", "2022");
 		assertEquals(10.50, minSpendFor2022InGroceries, 0.0);
 	}
+	
+	@Test
+	public void testMaxExpenseFor2022InDirectDebit() {
+		double maxSpendFor2022InDirectDebit = TCAT.getMaxSpend("Direct Debit", "2022");
+		assertEquals(212.43, maxSpendFor2022InDirectDebit, 0.0);
+	}
 }
