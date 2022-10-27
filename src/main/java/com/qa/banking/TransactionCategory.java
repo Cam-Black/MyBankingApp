@@ -63,7 +63,6 @@ public class TransactionCategory {
 				transactions.add(modelResults(rs));
 			}
 			
-			transactions.forEach(System.out::println);
 			return transactions;
 		} catch (Exception e) {
 			System.err.println(e);
