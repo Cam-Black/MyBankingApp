@@ -57,7 +57,7 @@ public class TransactionCategoryTest {
 	
 	@Test
 	public void testAvgInAMonthForDirectDebit() {
-		double directDebitAvg = TCAT.getAllTransactionsInAMonth("Direct Debit");
+		double directDebitAvg = TCAT.getAvgSpendInAMonth("Direct Debit");
 		assertEquals(150.0, directDebitAvg, 0.0);
 	}
 }
