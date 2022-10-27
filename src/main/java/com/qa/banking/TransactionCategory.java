@@ -52,10 +52,10 @@ public class TransactionCategory {
 		return "";
 	}
 	
-	public String getAllTransactionsByCategory(String category) {
+	public List<Transaction> getAllTransactionsByCategory(String category) {
 		try (Connection conn = DBUtils.getInstance().getConnection();
 			PreparedStatement ps = conn.prepareStatement(
-					"SELECT * FROM test.transactions where category = ? order by transaction_date desc;")) {
+					"SELECT * FROM transactions where category = ? order by transaction_date desc;")) {
 			List<Transaction> transactions = new ArrayList<>();
 			ps.setString(1, category);
 			ResultSet rs = ps.executeQuery();
@@ -64,11 +64,12 @@ public class TransactionCategory {
 				transactions.add(modelResults(rs));
 			}
 			
-			return transactions.toString();
+			transactions.forEach(System.out::println);
+			return transactions;
 		} catch (Exception e) {
 			System.err.println(e);
 		}
-		return null;
+		return new ArrayList<>();
 	}
 	
 	public Transaction modelResults(ResultSet rs) throws SQLException {

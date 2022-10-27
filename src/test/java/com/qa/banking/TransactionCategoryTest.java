@@ -2,8 +2,11 @@ package com.qa.banking;
 
 import com.qa.utils.DBUtils;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -13,7 +16,7 @@ public class TransactionCategoryTest {
 	@BeforeEach
 	public void setup() {
 		DBUtils.connect();
-		DBUtils.getInstance().init("src/test/resources/schema.sql", "src/test/resources/data.sql");
+		DBUtils.getInstance().init("src/test/resources/sql-schema.sql", "src/test/resources/sql-data.sql");
 	}
 	
 	@Test
@@ -37,8 +40,18 @@ public class TransactionCategoryTest {
 	
 	@Test
 	public void testAllTransactionsForLeisure() {
-		String transactions = TCAT.getAllTransactionsByCategory("Leisure");
-		String expected = "[Transaction: [date: 2022-03-15, vendor: WHSmiths, amount: 10.5, category: Leisure]";
-		assertEquals(expected, transactions);
+		List<Transaction> transactions = TCAT.getAllTransactionsByCategory("Leisure");
+		List<Transaction> expected = new ArrayList<>();
+		expected.add(new Transaction(LocalDate.of(2022, 3, 15), "WHSmiths", 10.5, "Leisure"));
+		assertEquals(expected.toString(), transactions.toString());
+	}
+	
+	@Test
+	public void testAllTransactionsForGroceries() {
+		List<Transaction> transactions = TCAT.getAllTransactionsByCategory("Groceries");
+		List<Transaction> expected = new ArrayList<>();
+		expected.add(new Transaction(LocalDate.of(2022, 8, 21), "Tesco", 10.30, "Groceries"));
+		expected.add(new Transaction(LocalDate.of(2022, 5, 16), "Co-Op", 10.5, "Groceries"));
+		assertEquals(expected.toString(), transactions.toString());
 	}
 }
