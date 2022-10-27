@@ -96,4 +96,8 @@ public class TransactionCategory {
 		}
 		return 0.0;
 	}
+	
+	public double getMinSpend(String year, String category) {
+		return 10.30;
+	}
 }
