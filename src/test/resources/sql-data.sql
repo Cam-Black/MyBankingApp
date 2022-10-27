@@ -5,3 +5,6 @@ VALUES ('2022-03-15', 'WHSmiths', 10.50, 'Leisure'),
        (CURRENT_DATE(), 'Car Finance', '200.00', 'Direct Debit'),
        ('2022-05-04', 'Car Finance', '212.43', 'Direct Debit'),
        (CURRENT_DATE(), 'Credit Card', '100.00', 'Direct Debit');
+
+INSERT INTO `transactions` (`transaction_date`, `vendor`, `amount`)
+VALUES ('2021-05-14', 'Waterstones', 15.99);
