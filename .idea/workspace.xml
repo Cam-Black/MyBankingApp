@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/sql-data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Implemented methods and Arrange to create passing tests.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql-schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sql-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql-data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fb-two-test-case-two" />
+        <entry key="$PROJECT_DIR$" value="fb-three-test-case-one" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +62,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TransactionCategoryTest">
+  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit">
     <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
@@ -115,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransactionCategoryTest.testTotalForAllCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionCategoryTest.testAvgInAMonthForDirectDebit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
         <pattern>
@@ -125,7 +120,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="testTotalForAllCategories" />
+      <option name="METHOD_NAME" value="testAvgInAMonthForDirectDebit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit" />
         <item itemvalue="JUnit.TransactionCategoryTest" />
         <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForGroceries" />
         <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForLeisure" />
         <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForAllCategories" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
       <workItem from="1666775805568" duration="25632000" />
-      <workItem from="1666858327996" duration="2682000" />
+      <workItem from="1666858327996" duration="6953000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -315,7 +310,42 @@
       <option name="project" value="LOCAL" />
       <updated>1666799529500</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Renamed files, fixed whitespaces due to SQL not being executed when not inline.">
+      <created>1666863635445</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863635445</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Renamed to sql-data.sql">
+      <created>1666863651382</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863651382</updated>
+    </task>
+    <task id="LOCAL-00024" summary=".idea files.">
+      <created>1666863669438</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863669438</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Removed [] from toString().">
+      <created>1666863694487</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863694487</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Implemented methods and Arrange to create passing tests.">
+      <created>1666863758146</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863758146</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +364,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="Added h2 and junit dependencies to pom.xml." />
     <MESSAGE value="Created empty classes needed for proj." />
     <MESSAGE value="Set up test schema and data to use for testing." />
@@ -355,6 +384,11 @@
     <MESSAGE value="Wrote test to check all transactions for a given period are printed in the correct order." />
     <MESSAGE value="Hard coded return statement to make test pass." />
     <MESSAGE value="Implemented code to pass test that prints all transactions under a given category." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented code to pass test that prints all transactions under a given category." />
+    <MESSAGE value="Renamed files, fixed whitespaces due to SQL not being executed when not inline." />
+    <MESSAGE value="Renamed to sql-data.sql" />
+    <MESSAGE value=".idea files." />
+    <MESSAGE value="Removed [] from toString()." />
+    <MESSAGE value="Implemented methods and Arrange to create passing tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented methods and Arrange to create passing tests." />
   </component>
 </project>

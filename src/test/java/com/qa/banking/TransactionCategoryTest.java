@@ -54,4 +54,10 @@ public class TransactionCategoryTest {
 		expected.add(new Transaction(LocalDate.of(2022, 5, 16), "Co-Op", 10.5, "Groceries"));
 		assertEquals(expected.toString(), transactions.toString());
 	}
+	
+	@Test
+	public void testAvgInAMonthForDirectDebit() {
+		double directDebitAvg = TCAT.getAllTransactionsInAMonth("Direct Debit");
+		assertEquals(150.0, directDebitAvg, 0.0);
+	}
 }
