@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS transactions;
+DROP TABLE IF EXISTS transactions CASCADE;
 CREATE TABLE IF NOT EXISTS transactions
 (
     `id`               BIGINT AUTO_INCREMENT PRIMARY KEY,
