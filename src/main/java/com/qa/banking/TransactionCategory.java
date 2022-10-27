@@ -112,4 +112,22 @@ public class TransactionCategory {
 		}
 		return 0.0;
 	}
+	
+	public double getMaxSpend(String category, String year) {
+		try (Connection conn = DBUtils.getInstance().getConnection();
+		     PreparedStatement ps =
+				     conn.prepareStatement(
+						     "SELECT MAX(amount) FROM transactions WHERE category = ? AND YEAR(transaction_date) = ?")) {
+			ps.setString(1, category);
+			ps.setString(2, year);
+			ResultSet rs = ps.executeQuery();
+			
+			if (rs.next()) {
+				return rs.getDouble(1);
+			}
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+		return 0.0;
+	}
 }
