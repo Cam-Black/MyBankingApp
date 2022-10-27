@@ -53,9 +53,8 @@ public class TransactionCategory {
 	}
 	
 	public List<Transaction> getAllTransactionsByCategory(String category) {
-		try (Connection conn = DBUtils.getInstance().getConnection();
-		     PreparedStatement ps = conn.prepareStatement(
-				     "SELECT * FROM transactions where category = ? order by transaction_date desc;")) {
+		try (Connection conn = DBUtils.getInstance().getConnection(); PreparedStatement ps = conn.prepareStatement(
+				"SELECT * FROM transactions where category = ? order by transaction_date desc;")) {
 			List<Transaction> transactions = new ArrayList<>();
 			ps.setString(1, category);
 			ResultSet rs = ps.executeQuery();
@@ -81,10 +80,9 @@ public class TransactionCategory {
 	}
 	
 	public double getAvgSpendInAMonth(String category) {
-		try (Connection conn = DBUtils.getInstance().getConnection();
-		     PreparedStatement ps = conn.prepareStatement(
-				     "SELECT AVG(amount) FROM transactions WHERE category = ? AND  MONTH(transaction_date) = MONTH" +
-						     "(CURRENT_DATE()) AND YEAR(transaction_date) = YEAR (CURRENT_DATE());")) {
+		try (Connection conn = DBUtils.getInstance().getConnection(); PreparedStatement ps = conn.prepareStatement(
+				"SELECT AVG(amount) FROM transactions WHERE category = ? AND  MONTH(transaction_date) = MONTH" +
+						"(CURRENT_DATE()) AND YEAR(transaction_date) = YEAR (CURRENT_DATE());")) {
 			ps.setString(1, category);
 			ResultSet rs = ps.executeQuery();
 			
@@ -97,7 +95,21 @@ public class TransactionCategory {
 		return 0.0;
 	}
 	
-	public double getMinSpend(String year, String category) {
-		return 10.30;
+	public double getMinSpend(String category, String year) {
+		try (Connection conn = DBUtils.getInstance().getConnection();
+		     PreparedStatement ps =
+				     conn.prepareStatement(
+						     "SELECT MIN(amount) FROM transactions WHERE category = ? AND YEAR(transaction_date) = ?")) {
+			ps.setString(1, category);
+			ps.setString(2, year);
+			ResultSet rs = ps.executeQuery();
+			
+			if (rs.next()) {
+				return rs.getDouble(1);
+			}
+		} catch (Exception e) {
+			System.err.println(e);
+		}
+		return 0.0;
 	}
 }

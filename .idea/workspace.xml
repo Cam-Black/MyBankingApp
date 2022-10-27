@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment=".idea folder change.">
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Implemented method, hard coding return value to pass test.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
@@ -62,8 +62,8 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TransactionCategoryTest.testMinExpenseFor2022InGroceries">
-    <configuration name="TransactionCategoryTest.testAllTransactionsForGroceries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TransactionCategoryTest">
+    <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyBankingApp" />
       <extension name="coverage">
         <pattern>
@@ -73,8 +73,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.banking" />
       <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
-      <option name="METHOD_NAME" value="testAllTransactionsForGroceries" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TransactionCategoryTest" />
         <item itemvalue="JUnit.TransactionCategoryTest.testMinExpenseFor2022InGroceries" />
         <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
         <item itemvalue="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit" />
         <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForLeisure" />
-        <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForGroceries" />
       </list>
     </recent_temporary>
   </component>
@@ -395,7 +394,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666872634103</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Implemented test to check the minimum spend in 2022 for the Groceries category.">
+      <created>1666873651356</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1666873651356</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Implemented method, hard coding return value to pass test.">
+      <created>1666873671630</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1666873671630</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,8 +427,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Created method getTotalCostForCategory and added hard value to return to make test pass." />
-    <MESSAGE value="Change Decimal to Double and removed the create schema lines." />
     <MESSAGE value="Changed Decimal to Double." />
     <MESSAGE value="Created method to return correct value from SQL query to pass test." />
     <MESSAGE value="renamed variables in test and added new failing test to check for groceries category." />
@@ -439,6 +450,83 @@
     <MESSAGE value="Hard coding return value to make test pass." />
     <MESSAGE value="Changed data to use current date for 2 values to test for average spend in a given month." />
     <MESSAGE value="Implemented working code to get the average spend in a month for a given category." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented working code to get the average spend in a month for a given category." />
+    <MESSAGE value="Implemented test to check the minimum spend in 2022 for the Groceries category." />
+    <MESSAGE value="Implemented method, hard coding return value to pass test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented method, hard coding return value to pass test." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>97</line>
+          <properties class="com.qa.banking.TransactionCategory" method="getMinSpend">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
