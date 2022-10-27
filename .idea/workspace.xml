@@ -4,31 +4,152 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="" />
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Implemented working code to get the average spend in a month for a given category.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="fb-three-test-case-one" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="iairszlo" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GfNi6qizxnBK4TsYmqIxA6FjNz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;A:/VSCode/Projects/SelfServicePortal&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;MySQL&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="JUnit.TransactionCategoryTest">
+    <configuration name="TransactionCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionCategoryTest.testAllTransactionsForGroceries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="METHOD_NAME" value="testAllTransactionsForGroceries" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionCategoryTest.testAllTransactionsForLeisure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="METHOD_NAME" value="testAllTransactionsForLeisure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionCategoryTest.testAvgInAMonthForDirectDebit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="METHOD_NAME" value="testAvgInAMonthForDirectDebit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyBankingApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.banking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.banking" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.banking.TransactionCategoryTest" />
+      <option name="METHOD_NAME" value="testTotalForLeisureCategoryIs10Pound50" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TransactionCategoryTest" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testAvgInAMonthForDirectDebit" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForGroceries" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testAllTransactionsForLeisure" />
+        <item itemvalue="JUnit.TransactionCategoryTest.testTotalForLeisureCategoryIs10Pound50" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,8 +158,245 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666775803994</updated>
+      <workItem from="1666775805568" duration="25632000" />
+      <workItem from="1666858327996" duration="10085000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1666776106103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666776106103</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added h2 and junit dependencies to pom.xml.">
+      <created>1666776639669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666776639669</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created empty classes needed for proj.">
+      <created>1666777105528</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666777105528</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Set up test schema and data to use for testing.">
+      <created>1666778231056</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666778231056</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Created setup in test creating a DBUtils class to handle initial setup. Created failing test to test the total cost of the &quot;Leisure&quot; Category.">
+      <created>1666780199867</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666780199867</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed sql queries.">
+      <created>1666784551029</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666784551029</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changed name of db due to name conflict.">
+      <created>1666784577245</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666784577245</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Ignored .idea folder.">
+      <created>1666784607047</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666784607047</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Created method getTotalCostForCategory and added hard value to return to make test pass.">
+      <created>1666784661556</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666784661556</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change Decimal to Double and removed the create schema lines.">
+      <created>1666792487109</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666792487109</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changed Decimal to Double.">
+      <created>1666792696787</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666792696787</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Created method to return correct value from SQL query to pass test.">
+      <created>1666792755344</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666792755344</updated>
+    </task>
+    <task id="LOCAL-00013" summary="renamed variables in test and added new failing test to check for groceries category.">
+      <created>1666793376741</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666793376741</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Removed need for List and return sum of result set.">
+      <created>1666793403413</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666793403413</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Refactored code to work from test .sql files and added second test case that also passes.">
+      <created>1666794508866</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666794508866</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Created a new test case to return, in String format the total cost for every category. Added empty method to prevent exceptions from tests.">
+      <created>1666795607394</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666795607394</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Passed second test case by returning a String containing the contents of the Category and Total Spend.">
+      <created>1666796484713</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666796484713</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Code cleanup, (imports and whitespace).">
+      <created>1666796773596</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666796773596</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Wrote test to check all transactions for a given period are printed in the correct order.">
+      <created>1666797781457</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666797781457</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Hard coded return statement to make test pass.">
+      <created>1666798298147</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666798298147</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Implemented code to pass test that prints all transactions under a given category.">
+      <created>1666799529500</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666799529500</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Renamed files, fixed whitespaces due to SQL not being executed when not inline.">
+      <created>1666863635445</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863635445</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Renamed to sql-data.sql">
+      <created>1666863651382</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863651382</updated>
+    </task>
+    <task id="LOCAL-00024" summary=".idea files.">
+      <created>1666863669438</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863669438</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Removed [] from toString().">
+      <created>1666863694487</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863694487</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Implemented methods and Arrange to create passing tests.">
+      <created>1666863758146</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1666863758146</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Added test data to check avg spend in a month.">
+      <created>1666869478974</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869478974</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Created failing test for getting avg spend in a given month.">
+      <created>1666869502167</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869502167</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Renamed method in test for accuracy in what the method is returning.">
+      <created>1666869570723</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869570724</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data.">
+      <created>1666869693603</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869693603</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Hard coding return value to make test pass.">
+      <created>1666869873891</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1666869873891</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Changed data to use current date for 2 values to test for average spend in a given month.">
+      <created>1666872603393</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1666872603393</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Implemented working code to get the average spend in a month for a given category.">
+      <created>1666872634103</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1666872634103</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -53,5 +411,77 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Created method getTotalCostForCategory and added hard value to return to make test pass." />
+    <MESSAGE value="Change Decimal to Double and removed the create schema lines." />
+    <MESSAGE value="Changed Decimal to Double." />
+    <MESSAGE value="Created method to return correct value from SQL query to pass test." />
+    <MESSAGE value="renamed variables in test and added new failing test to check for groceries category." />
+    <MESSAGE value="Removed need for List and return sum of result set." />
+    <MESSAGE value="Refactored code to work from test .sql files and added second test case that also passes." />
+    <MESSAGE value="Created a new test case to return, in String format the total cost for every category. Added empty method to prevent exceptions from tests." />
+    <MESSAGE value="Passed second test case by returning a String containing the contents of the Category and Total Spend." />
+    <MESSAGE value="Code cleanup, (imports and whitespace)." />
+    <MESSAGE value="Wrote test to check all transactions for a given period are printed in the correct order." />
+    <MESSAGE value="Hard coded return statement to make test pass." />
+    <MESSAGE value="Implemented code to pass test that prints all transactions under a given category." />
+    <MESSAGE value="Renamed files, fixed whitespaces due to SQL not being executed when not inline." />
+    <MESSAGE value="Renamed to sql-data.sql" />
+    <MESSAGE value=".idea files." />
+    <MESSAGE value="Removed [] from toString()." />
+    <MESSAGE value="Implemented methods and Arrange to create passing tests." />
+    <MESSAGE value="Added test data to check avg spend in a month." />
+    <MESSAGE value="Created failing test for getting avg spend in a given month." />
+    <MESSAGE value="Renamed method in test for accuracy in what the method is returning." />
+    <MESSAGE value="Due to new data added in the sql file, fixed expected result for testTotalForAllCategories to include new data." />
+    <MESSAGE value="Hard coding return value to make test pass." />
+    <MESSAGE value="Changed data to use current date for 2 values to test for average spend in a given month." />
+    <MESSAGE value="Implemented working code to get the average spend in a month for a given category." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented working code to get the average spend in a month for a given category." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
