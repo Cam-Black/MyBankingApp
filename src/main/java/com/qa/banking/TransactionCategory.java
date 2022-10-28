@@ -24,7 +24,7 @@ public class TransactionCategory {
 			}
 			
 		} catch (Exception e) {
-			System.err.println(e);
+			e.printStackTrace();
 		}
 		return 0.0;
 	}
@@ -65,7 +65,7 @@ public class TransactionCategory {
 			
 			return transactions;
 		} catch (Exception e) {
-			System.err.println(e);
+			e.printStackTrace();
 		}
 		return new ArrayList<>();
 	}
@@ -89,7 +89,7 @@ public class TransactionCategory {
 				return rs.getDouble(1);
 			}
 		} catch (Exception e) {
-			System.err.println(e);
+			e.printStackTrace();
 		}
 		return 0.0;
 	}
@@ -107,7 +107,7 @@ public class TransactionCategory {
 				return rs.getDouble(1);
 			}
 		} catch (Exception e) {
-			System.err.println(e);
+			e.printStackTrace();
 		}
 		return 0.0;
 	}
@@ -125,7 +125,7 @@ public class TransactionCategory {
 				return rs.getDouble(1);
 			}
 		} catch (Exception e) {
-			System.err.println(e);
+			e.printStackTrace();
 		}
 		return 0.0;
 	}
