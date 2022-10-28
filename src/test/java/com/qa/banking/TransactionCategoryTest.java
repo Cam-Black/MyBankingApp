@@ -22,13 +22,13 @@ public class TransactionCategoryTest {
 	@Test
 	public void testTotalForLeisureCategoryIs10Pound50() {
 		double expectedCost = TCAT.getTotalCostForCategory("Leisure");
-		assertEquals(10.50, expectedCost);
+		assertEquals(10.50, expectedCost, 0.0);
 	}
 	
 	@Test
 	public void testTotalForGroceriesCategoryIs20Pound80() {
 		double expectedCost = TCAT.getTotalCostForCategory("Groceries");
-		assertEquals(20.80, expectedCost);
+		assertEquals(20.80, expectedCost, 0.0);
 	}
 	
 	@Test

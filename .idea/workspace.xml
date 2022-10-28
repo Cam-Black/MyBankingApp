@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="Removed Whitespace." />
+    <list default="true" id="74b7749d-d04d-4540-bb40-be1245c3dad6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/banking/TransactionCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/utils/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/utils/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/banking/TransactionCategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sql-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql-data.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,6 +164,7 @@
       <updated>1666775803994</updated>
       <workItem from="1666775805568" duration="25632000" />
       <workItem from="1666858327996" duration="10085000" />
+      <workItem from="1666944152073" duration="5822000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666776106103</created>
@@ -460,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666875874902</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Removed unneeded sysout in the getAllTransactionsByCategory method.">
+      <created>1666876246231</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1666876246231</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Code cleanup, (imports and whitespace)." />
     <MESSAGE value="Wrote test to check all transactions for a given period are printed in the correct order." />
     <MESSAGE value="Hard coded return statement to make test pass." />
     <MESSAGE value="Implemented code to pass test that prints all transactions under a given category." />
@@ -504,6 +517,7 @@
     <MESSAGE value="Implemented second test case to confirm max expense is returned from different categories." />
     <MESSAGE value=".idea files." />
     <MESSAGE value="Removed Whitespace." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed Whitespace." />
+    <MESSAGE value="Removed unneeded sysout in the getAllTransactionsByCategory method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unneeded sysout in the getAllTransactionsByCategory method." />
   </component>
 </project>
