@@ -48,19 +48,19 @@ public class DBUtils {
 	public int executeQuery(String file) {
 		int modified = 0;
 		try (Connection connection = this.getConnection();
-		     BufferedReader br = new BufferedReader(new FileReader(file));) {
+		     BufferedReader br = new BufferedReader(new FileReader(file))) {
 			String fileAsString = br.lines().reduce((acc, next) -> acc + next).orElse("");
 			String[] queries = fileAsString.split(";");
 			modified += Stream.of(queries).map(string -> {
-				try (Statement statement = connection.createStatement();) {
+				try (Statement statement = connection.createStatement()) {
 					return statement.executeUpdate(string);
 				} catch (Exception e) {
-					System.err.println(e);
+					e.printStackTrace();
 					return 0;
 				}
 			}).reduce(Integer::sum).orElse(0);
 		} catch (Exception e) {
-			System.err.println(e);
+			e.printStackTrace();
 		}
 		return modified;
 	}
