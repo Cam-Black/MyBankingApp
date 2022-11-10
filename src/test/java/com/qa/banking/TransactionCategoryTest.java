@@ -4,6 +4,8 @@ import com.qa.utils.DBUtils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,14 +23,14 @@ public class TransactionCategoryTest {
 	
 	@Test
 	public void testTotalForLeisureCategoryIs10Pound50() {
-		double expectedCost = TCAT.getTotalCostForCategory("Leisure");
-		assertEquals(10.50, expectedCost, 0.0);
+		BigDecimal expectedCost = TCAT.getTotalCostForCategory("Leisure");
+		assertEquals(BigDecimal.valueOf(10.50), expectedCost);
 	}
 	
 	@Test
 	public void testTotalForGroceriesCategoryIs20Pound80() {
-		double expectedCost = TCAT.getTotalCostForCategory("Groceries");
-		assertEquals(20.80, expectedCost, 0.0);
+		BigDecimal expectedCost = TCAT.getTotalCostForCategory("Groceries");
+		assertEquals(BigDecimal.valueOf(20.80), expectedCost);
 	}
 	
 	@Test
@@ -46,7 +48,7 @@ public class TransactionCategoryTest {
 	public void testAllTransactionsForLeisure() {
 		List<Transaction> transactions = TCAT.getAllTransactionsByCategory("Leisure");
 		List<Transaction> expected = new ArrayList<>();
-		expected.add(new Transaction(LocalDate.of(2022, 3, 15), "WHSmiths", 10.5, "Leisure"));
+		expected.add(new Transaction(LocalDate.of(2022, 3, 15), "WHSmiths", new BigDecimal("10.50"), "Leisure"));
 		assertEquals(expected.toString(), transactions.toString());
 	}
 	
@@ -54,38 +56,38 @@ public class TransactionCategoryTest {
 	public void testAllTransactionsForGroceries() {
 		List<Transaction> transactions = TCAT.getAllTransactionsByCategory("Groceries");
 		List<Transaction> expected = new ArrayList<>();
-		expected.add(new Transaction(LocalDate.of(2022, 8, 21), "Tesco", 10.30, "Groceries"));
-		expected.add(new Transaction(LocalDate.of(2022, 5, 16), "Co-Op", 10.5, "Groceries"));
+		expected.add(new Transaction(LocalDate.of(2022, 8, 21), "Tesco", BigDecimal.valueOf(10.30), "Groceries"));
+		expected.add(new Transaction(LocalDate.of(2022, 5, 16), "Co-Op", BigDecimal.valueOf(10.50), "Groceries"));
 		assertEquals(expected.toString(), transactions.toString());
 	}
 	
 	@Test
 	public void testAvgInAMonthForDirectDebit() {
-		double directDebitAvg = TCAT.getAvgSpendInAMonth("Direct Debit");
-		assertEquals(150.0, directDebitAvg, 0.0);
+		BigDecimal directDebitAvg = TCAT.getAvgSpendInAMonth("Direct Debit");
+		assertEquals(new BigDecimal("150.00", new MathContext(2)), directDebitAvg);
 	}
 	
 	@Test
 	public void testMinExpenseFor2022InGroceries() {
-		double minSpendFor2022InGroceries = TCAT.getMinSpend("Groceries", "2022");
-		assertEquals(10.30, minSpendFor2022InGroceries, 0.0);
+		BigDecimal minSpendFor2022InGroceries = TCAT.getMinSpend("Groceries", "2022");
+		assertEquals(BigDecimal.valueOf(10.30), minSpendFor2022InGroceries);
 	}
 	
 	@Test
 	public void testMinExpenseFor2022InLeisure() {
-		double minSpendFor2022InLeisure = TCAT.getMinSpend("Leisure", "2022");
-		assertEquals(10.50, minSpendFor2022InLeisure, 0.0);
+		BigDecimal minSpendFor2022InLeisure = TCAT.getMinSpend("Leisure", "2022");
+		assertEquals(BigDecimal.valueOf(10.50), minSpendFor2022InLeisure);
 	}
 	
 	@Test
 	public void testMaxExpenseFor2022InGroceries() {
-		double minSpendFor2022InGroceries = TCAT.getMaxSpend("Groceries", "2022");
-		assertEquals(10.50, minSpendFor2022InGroceries, 0.0);
+		BigDecimal minSpendFor2022InGroceries = TCAT.getMaxSpend("Groceries", "2022");
+		assertEquals(BigDecimal.valueOf(10.50), minSpendFor2022InGroceries);
 	}
 	
 	@Test
 	public void testMaxExpenseFor2022InDirectDebit() {
-		double maxSpendFor2022InDirectDebit = TCAT.getMaxSpend("Direct Debit", "2022");
-		assertEquals(212.43, maxSpendFor2022InDirectDebit, 0.0);
+		BigDecimal maxSpendFor2022InDirectDebit = TCAT.getMaxSpend("Direct Debit", "2022");
+		assertEquals(BigDecimal.valueOf(212.43), maxSpendFor2022InDirectDebit);
 	}
 }

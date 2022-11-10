@@ -2,6 +2,7 @@ package com.qa.banking;
 
 import com.qa.utils.DBUtils;
 
+import java.math.BigDecimal;
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -13,20 +14,20 @@ public class TransactionCategory {
 		super();
 	}
 	
-	public double getTotalCostForCategory(String category) {
+	public BigDecimal getTotalCostForCategory(String category) {
 		try (Connection conn = DBUtils.getInstance().getConnection();
 		     PreparedStatement ps = conn.prepareStatement("SELECT SUM(amount) FROM transactions where category = ?")) {
 			ps.setString(1, category);
 			ResultSet rs = ps.executeQuery();
 			
 			if (rs.next()) {
-				return rs.getDouble(1);
+				return rs.getBigDecimal(1);
 			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return 0.0;
+		return BigDecimal.valueOf(0.0);
 	}
 	
 	public String getTotalCostPerCategory() {
@@ -39,7 +40,7 @@ public class TransactionCategory {
 			}
 			
 			categories.stream().distinct().forEach(el -> {
-				double cost = getTotalCostForCategory(el);
+				BigDecimal cost = getTotalCostForCategory(el);
 				sb.append(el);
 				sb.append(" Total Spend: ");
 				sb.append(String.format("%.2f", cost));
@@ -73,12 +74,12 @@ public class TransactionCategory {
 	public Transaction modelResults(ResultSet rs) throws SQLException {
 		LocalDate transactionDate = rs.getDate("transaction_date").toLocalDate();
 		String vendor = rs.getString("vendor");
-		Double amount = rs.getDouble("amount");
+		BigDecimal amount = rs.getBigDecimal("amount");
 		String category = rs.getString("category");
 		return new Transaction(transactionDate, vendor, amount, category);
 	}
 	
-	public double getAvgSpendInAMonth(String category) {
+	public BigDecimal getAvgSpendInAMonth(String category) {
 		try (Connection conn = DBUtils.getInstance().getConnection(); PreparedStatement ps = conn.prepareStatement(
 				"SELECT AVG(amount) FROM transactions WHERE category = ? AND  MONTH(transaction_date) = MONTH" +
 						"(CURRENT_DATE()) AND YEAR(transaction_date) = YEAR (CURRENT_DATE());")) {
@@ -86,15 +87,15 @@ public class TransactionCategory {
 			ResultSet rs = ps.executeQuery();
 			
 			if (rs.next()) {
-				return rs.getDouble(1);
+				return rs.getBigDecimal(1);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return 0.0;
+		return BigDecimal.valueOf(0.0);
 	}
 	
-	public double getMinSpend(String category, String year) {
+	public BigDecimal getMinSpend(String category, String year) {
 		try (Connection conn = DBUtils.getInstance().getConnection();
 		     PreparedStatement ps =
 				     conn.prepareStatement(
@@ -104,15 +105,15 @@ public class TransactionCategory {
 			ResultSet rs = ps.executeQuery();
 			
 			if (rs.next()) {
-				return rs.getDouble(1);
+				return rs.getBigDecimal(1);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return 0.0;
+		return BigDecimal.valueOf(0.0);
 	}
 	
-	public double getMaxSpend(String category, String year) {
+	public BigDecimal getMaxSpend(String category, String year) {
 		try (Connection conn = DBUtils.getInstance().getConnection();
 		     PreparedStatement ps =
 				     conn.prepareStatement(
@@ -122,11 +123,11 @@ public class TransactionCategory {
 			ResultSet rs = ps.executeQuery();
 			
 			if (rs.next()) {
-				return rs.getDouble(1);
+				return rs.getBigDecimal(1);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return 0.0;
+		return BigDecimal.valueOf(0.0);
 	}
 }

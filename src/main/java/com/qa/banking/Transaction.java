@@ -1,18 +1,19 @@
 package com.qa.banking;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Transaction {
 	private LocalDate transactionDate;
 	private String vendor;
-	private Double amount;
+	private BigDecimal amount;
 	private String category;
 	
 	public Transaction() {
 		super();
 	}
 	
-	public Transaction(LocalDate transactionDate, String vendor, Double amount, String category) {
+	public Transaction(LocalDate transactionDate, String vendor, BigDecimal amount, String category) {
 		super();
 		this.transactionDate = transactionDate;
 		this.vendor = vendor;
@@ -36,11 +37,11 @@ public class Transaction {
 		this.vendor = vendor;
 	}
 	
-	public Double getAmount() {
+	public BigDecimal getAmount() {
 		return amount;
 	}
 	
-	public void setAmount(Double amount) {
+	public void setAmount(BigDecimal amount) {
 		this.amount = amount;
 	}
 	
